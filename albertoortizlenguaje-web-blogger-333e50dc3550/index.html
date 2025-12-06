@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icons/empresa.ico" type="image/x-icon" />
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenidos a Mi Empresa</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="parallax">
+      <video autoplay muted loop id="video-fondo">
+        <source src="assets/videos/video.mp4" type="video/mp4" />
+      </video>
+
+      <h2>Más que una Startup</h2>
+      <p>Somos una agencia de tecnología con soluciones innovadoras.</p>
+      <button
+        style="
+          background-color: transparent;
+          color: white;
+          padding: 10px 20px;
+          border: 2px solid white;
+          border-radius: 25px;
+          font-size: 16px;
+        "
+      >
+        <a href="#contacto" style="text-decoration: none; color: white"
+          >Hablamos</a
+        >
+      </button>
+    </section>
+
+    <section id="video">
+      <h2>Conócenos</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/IyIjYuF_HUo?si=-wKyDOlMRZjQ252J"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="blog">
+      <h2>Nuestro Blog</h2>
+      <iframe
+        src="https://miespresa.blogspot.com/2025/03/titulo-del-blog-innovacion-y-tecnologia.html"
+        width="100%"
+        height="500px"
+      ></iframe>
+      <button
+        style="
+          background-color: transparent;
+          color: white;
+          padding: 10px 20px;
+          border: 2px solid white;
+          border-radius: 25px;
+          font-size: 16px;
+        "
+      >
+        <a
+          href="https://miespresa.blogspot.com/2025/03/titulo-del-blog-innovacion-y-tecnologia.html"
+          target="_blank"
+          style="text-decoration: none; color: white"
+        >
+          Ir al blog</a
+        >
+      </button>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="grid">
+        <div
+          class="item"
+          style="background-image: url('assets/images/imagen1.jpg')"
+          data-text="OFICINAS"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('assets/images/imagen2.jpg')"
+          data-text="TECNOLOGÍA INNOVADORA"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('assets/images/imagen3.jpg')"
+          data-text="SEDE DE LA EMPRESA"
+        ></div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required />
+        <label>Email:</label>
+        <input type="email" name="email" required />
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required></textarea>
+        <button
+          type="submit"
+          style="
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 16px;
+          "
+        >
+          Enviar
+        </button>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48344.43213923568!2d-3.6324714227892794!3d37.18093911779569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!	1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e1!3m2!1ses!2ses!4v1741175678375!5m2!1ses!2ses"
+        width="75%"
+        height="300px"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mi Empresa</p>
+    </footer>
+  </body>
+</html>

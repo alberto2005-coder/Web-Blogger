@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  align-items: center;
+  text-align: center;
+  background: url("../assets/images/background.jpg");
+}
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#video {
+  color: black;
+  background: url("../assets/images/conocenos.jpg");
+}
+#inicio {
+  position: relative;
+  width: 100%;
+  height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.parallax h2,
+.parallax p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+section {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+.item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+.item:hover {
+  background-image: none;
+  background-color: #00008b;
+  opacity: 1;
+  cursor: pointer;
+}
+.item::after {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  background: #00008b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.item:hover::after {
+  opacity: 1;
+}
+#contacto {
+  height: 100vh;
+  border: 2px solid white;
+  background: url("../assets/images/fondo.jpg") no-repeat center center/cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+label {
+  color: white;
+  align-items: left;
+  text-align: left;
+}
+form label,
+form input,
+form textarea,
+form button {
+  margin: 10px 10px;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
