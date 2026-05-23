@@ -25,4 +25,4 @@ El proyecto se ha reestructurado para una mejor organización:
 
 ## Créditos
 
-Desarrollado por [Tu Nombre/Organización].
+Desarrollado por Alberto.
